@@ -6,9 +6,27 @@ body {
   margin: 0px;
 }
 
-header a {
+a {
   text-decoration: none;
+}
+
+header {
+  overflow: hidden;
+  width: 100%;
+}
+
+header a {
   color: white;
+}
+
+header .lside {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header .rside {
   float: right;
   display: block;
   text-align: center;
