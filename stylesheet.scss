@@ -32,3 +32,12 @@ header {
         padding: 30px 10px;
     }
 }
+
+section {
+    overflow: auto;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    transition: margin-left .5s;
+    padding: 10px 30px;
+}

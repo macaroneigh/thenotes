@@ -32,4 +32,14 @@ header .rside {
   text-align: center;
   padding: 30px 10px;
 }
+
+section {
+  overflow: auto;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 10px 30px;
+}
 /*# sourceMappingURL=stylesheet.css.map */
