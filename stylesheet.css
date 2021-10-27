@@ -23,23 +23,29 @@ header .lside {
   float: left;
   display: block;
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 
 header .rside {
   float: right;
   display: block;
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 
 section {
   overflow: auto;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.7);
+  color: black;
   width: 70%;
   -webkit-transition: margin-left .5s;
   transition: margin-left .5s;
   padding: 10px 30px;
+}
+
+section a {
+  color: black;
+  font-weight: 900;
 }
 /*# sourceMappingURL=stylesheet.css.map */
