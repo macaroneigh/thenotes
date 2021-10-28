@@ -14,17 +14,11 @@
         </header>
 
         <section>
-            <a href="../thenotes/print.html">Print</a> <br>
-            <a href="../thenotes/textbased.html">Textbased</a> <br>
-            <a href="../thenotes/match.html">Match</a> <br>
-            <a href="../thenotes/pure.html">Pure</a> <br> 
-            <a href="../thenotes/types.html">Types</a> <br>
-            <a href="../thenotes/exists.html">Exists</a> <br>
-            <a href="../thenotes/loop.html">Loop</a> <br>
-            <a href="../thenotes/immutable.html">Immutable</a> <br>
-            <a href="../thenotes/yield.html">Yield</a> <br>
-            <a href="../thenotes/traits.html">Traits</a> <br>
-            <a href="../thenotes/flatten.html">Flatten</a>
+            <h4>Which of the following are equivalent to flatten? (multiple possible)</h4>
+            <img src="flatten/O19-2019.png" style="width: 50%; height: auto;"> <br>
+            <strong>def</strong> flatten1[A](l : List[List[A]]) = l.foldLeft(List[A]())(_ ++ _) <br>
+            <strong>def</strong> flatten3[A](l : List[List[A]]) = l.foldRight(List[A]())(_ ++ _) <br>
+            <strong>def</strong> flatten4[A](l : List[List[A]]) = l.fold(List[A]())(_ ++ _)
         </section>
     </body>
 </html>
