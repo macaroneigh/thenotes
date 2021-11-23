@@ -14,6 +14,41 @@
         </header>
 
         <section>
+            <h3>Executives of a news portal investigate the amount of time its visitors spend on the
+                main page of the portal. Time spent by 25 randomly chosen visitors was measured and
+                the results of these measurements are presented below:</h3>
+                <img src="images/probability_05.png" style="height: auto; width: 50%;">
+            <dl>
+                <dt><strong>Give, based on the relative frequency, an estimate for the probability that a ran-
+                    domly selected visitor will spend more than 30 seconds on the main page of the
+                    portal.</strong></dt>
+                <dd>In the table of measurements, 13 of them exceed 30 seconds.<br>
+                    Therefore, an estimate based on the relative frequency is 13/25 = 0.52.</dd>
+            </dl>
+            <h4>The executives would like the population distribution of the amount of time spent on
+                the main page to be normally distributed with mean μ = 30.00 seconds and standard
+                deviation σ = 10.00 seconds.</h4>
+            <dl>
+                <dt><strong>Give, assuming that the goal of the executives is achieved, the probability that a
+                    randomly selected visitor will spend less than 28 seconds on the main page of the
+                    portal.</strong></dt>
+                <dd>The amount of time spent on the main page is assumed to be normally distributed with mean
+                    μ = 30.00 and standard deviation σ = 10.00. <br> 
+                    Therefore, the z-score of 28 seconds is: (28.00 - 30.00) / 10.00 = -0.20. <br>
+                    We use Table 2 and see that P(Z ≤ -0.20) = 0.4207 or 42.07%, where Z denotes the standard normal distribution. <br>
+                    Hence, the probability that a single randomly selected visitor will spend less than 28 seconds on the main page of the portal is 0.4207 (or 42.07%).</dd>
+                   
+                <dt><strong>Give, assuming that the goal of the executives is achieved, the probability that the
+                    mean time spent on the main page of the portal by 36 randomly selected visitors
+                    is less than 28 seconds.</strong></dt>    
+                <dd>The mean amount of time spent on the main page by n = 36 randomly selected visitors is
+                    normally distributed with mean μ = 30.00 and standard deviation σ = 10.00 / √36 = 5/3, by the
+                    Central Limit Theorem. <br>
+                    Therefore, the z-score of 28 seconds is (28.00 - 30.00) / (5/3) = -1.20. <br> 
+                    We use Table 2 again and see that P (Z ≤ −1.20) = 0.1151. <br>
+                    Hence, the probability that the mean time spent on the main page by 36 randomly selected visitors is less than 28 seconds is 0.1151 (or 11.51%).</dd>
+            </dl>
+            
             <h3>A developer of a popular mobile app (available for Android, iPhone, and Windows
                 Phone) knows that 65% of the users have an iPhone and 20% of the users have an
                 Android phone. A user can pay 1 euro to get rid of annoying ads. The developer knows
@@ -59,7 +94,30 @@
             <dl>
                 <dt><strong>Compute the probability that a randomly chosen employee has Marble installed
                     on their laptop.</strong></dt>
-                <dd></dd>
+                <dd>Recall that A = {Verge crashed at least once} and B = {Marble is installed}. <br> 
+                    We have P(A) = 0.80, and P(not A) = 1 − P(A) = 0.20, where "not A" is the complement of the event A. <br> 
+                    We also have P(B|A) = 0.92 and P(B|not A) = 0.46. <br> <br>
+                    By the law of total probability: <br>
+                    P(B) = P(B|A) * P(A) * P(B|not A) * P(not A) = 0.92 · 0.80 + 0.46 · 0.20 = 0.828.</dd>
+
+                <dt><strong>A randomly chosen employee has Marble installed on their laptop. Compute the
+                    probability that Verge, installed previously on their laptop, crashed at least once.
+                    Round the result to three decimal places. (To one decimal place, if you express
+                    probabilities in percentages.)</strong></dt>
+                <dd>We are interested in P(A|B). <br>
+                    By Bayes’ theorem: <br> <br>
+                    P(A|B) = (P(B|A) * P(A)) / (P(B|A) * P(A) + P(B|not A) * P(not A)) <br> <br>
+                    Therefore: <br> <br>
+                    P(A|B) = (0.92 * 0.80) / (0.92 * 0.80 + 0.46 * 0.20) <br>
+                    = (2 * 4 * 0.46 * 0.20) / (2 * 4 * 0.46 * 0.20 + 0.46 * 0.20) <br>
+                    = 8 / 9 <br> 
+                    = (approx.) 0.889</dd>
+                
+                <dt><strong>Do crashes of Verge increase the probability of installing Marbles? Does it imply
+                    that the events A = {Verge crashed at least once} and B = {Marble is installed}
+                    are dependent? Why (not)?</strong></dt>
+                <dd>Crashes of Verge increase the probability of installing Marbles, since P(B|A) = 0.920 > 0.828 = P(B).<br>
+                    It also implies that A and B are dependent, because if they were independent, P(B|A) = P(B).</dd>
             </dl>
 
             <h3>Alice tosses a fair coin three times.</h3>
